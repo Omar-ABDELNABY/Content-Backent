@@ -1,0 +1,80 @@
+{ level: 'info',
+  message: 'mongodb://localhost:27017/contentwebsite',
+  timestamp: '2019-11-29T19:27:40.541Z' }
+{ level: 'info',
+  message: 'Listening on port 3000',
+  timestamp: '2019-11-29T19:27:40.568Z' }
+{ level: 'info',
+  message:
+   'Connected to database: mongodb://localhost:27017/contentwebsite',
+  timestamp: '2019-11-29T19:27:41.610Z' }
+{ level: 'info',
+  message: 'Listening on port 3000',
+  timestamp: '2019-11-29T19:32:35.858Z' }
+{ level: 'info',
+  message:
+   'Connected to database: mongodb://localhost:27017/contentwebsite',
+  timestamp: '2019-11-29T19:32:36.886Z' }
+{ level: 'info',
+  message: 'register user attempt: abas',
+  timestamp: '2019-11-29T19:34:13.951Z' }
+{ level: 'info',
+  message: 'Listening on port 3000',
+  timestamp: '2019-11-29T19:36:30.151Z' }
+{ level: 'info',
+  message:
+   'Connected to database: mongodb://localhost:27017/contentwebsite',
+  timestamp: '2019-11-29T19:36:31.184Z' }
+{ level: 'info',
+  message: 'register user attempt: abas',
+  timestamp: '2019-11-29T19:36:34.889Z' }
+{ level: 'info',
+  message: 'Listening on port 3000',
+  timestamp: '2019-11-29T19:37:55.432Z' }
+{ level: 'info',
+  message:
+   'Connected to database: mongodb://localhost:27017/contentwebsite',
+  timestamp: '2019-11-29T19:37:56.455Z' }
+{ level: 'info',
+  message: 'register user attempt: abas',
+  timestamp: '2019-11-29T19:38:03.312Z' }
+{ level: 'info',
+  message: 'Listening on port 3000',
+  timestamp: '2019-11-29T19:38:24.167Z' }
+{ level: 'info',
+  message:
+   'Connected to database: mongodb://localhost:27017/contentwebsite',
+  timestamp: '2019-11-29T19:38:25.200Z' }
+{ level: 'info',
+  message: 'register user attempt: abas',
+  timestamp: '2019-11-29T19:38:26.137Z' }
+{ level: 'info',
+  message: 'register user attempt: abas',
+  timestamp: '2019-11-29T19:39:38.363Z' }
+{ level: 'info',
+  message: 'Listening on port 3000',
+  timestamp: '2019-11-29T19:43:37.810Z' }
+{ level: 'info',
+  message:
+   'Connected to database: mongodb://localhost:27017/contentwebsite',
+  timestamp: '2019-11-29T19:43:38.831Z' }
+{ level: 'info',
+  message: 'findSections',
+  timestamp: '2019-11-29T19:43:47.393Z' }
+{ level: 'info',
+  message: 'Listening on port 3000',
+  timestamp: '2019-11-29T19:44:15.273Z' }
+{ level: 'info',
+  message:
+   'Connected to database: mongodb://localhost:27017/contentwebsite',
+  timestamp: '2019-11-29T19:44:16.297Z' }
+{ level: 'info',
+  message: 'Listening on port 3000',
+  timestamp: '2019-11-29T19:58:38.509Z' }
+{ level: 'info',
+  message:
+   'Connected to database: mongodb://localhost:27017/contentwebsite',
+  timestamp: '2019-11-29T19:58:39.533Z' }
+{ level: 'info',
+  message: 'register user attempt: abas',
+  timestamp: '2019-11-29T19:59:15.285Z' }

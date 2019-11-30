@@ -1,0 +1,12 @@
+{ level: 'error',
+  service: 'user-service',
+  timestamp: '2019-11-29T20:19:13.048Z' }
+{ level: 'error',
+  service: 'user-service',
+  timestamp: '2019-11-29T20:19:27.323Z' }
+{ level: 'error',
+  service: 'user-service',
+  timestamp: '2019-11-29T20:20:59.471Z' }
+{ level: 'error',
+  service: 'user-service',
+  timestamp: '2019-11-29T20:21:24.216Z' }
