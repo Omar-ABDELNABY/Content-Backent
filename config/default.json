@@ -1,4 +1,4 @@
 {
     "jwtPrivateKey": "",
-    "connectionString": "mongodb://localhost:27017/contentwebsite"
+    "connectionString": ""
 }

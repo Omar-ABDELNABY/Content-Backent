@@ -1,3 +1,5 @@
 {
-    "jwtPrivateKey": "content_jwtPrivateKey"
+    "jwtPrivateKey": "content_jwtPrivateKey",
+    "connectionString": "content_db"
+
 }

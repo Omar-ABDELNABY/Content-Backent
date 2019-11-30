@@ -14,7 +14,7 @@
             "program": "${workspaceFolder}\\index.js",
             "env": {
                 "content_jwtPrivateKey": "blaaah",
-                
+                "content_db": "mongodb://localhost:27017/contentwebsite"
 			},
         }
     ]
