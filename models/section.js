@@ -5,17 +5,20 @@ const sectionSchema = mongoose.Schema({
   title: { 
     type: String,
     trim: true, 
-    required: true, 
-    minlength: 2, 
+    required: false, 
+    // minlength: 2, 
     maxlength:50, 
-    match: /[A-Za-z0-9 ]*/ 
+    // match: /[A-Za-z0-9 ]*/ 
     },
     body: { 
       type: String,
       trim: true, 
-      required: true, 
-      minlength: 2, 
+      required: false, 
+      // minlength: 1, 
       },
+    order: {
+      type: Number
+    }
 });
 Section = mongoose.model('section', sectionSchema, 'sections');
 

@@ -1,5 +1,4 @@
 const auth = require('../middleware/auth');
-const bcrypt = require('bcrypt');
 const _ = require('lodash');
 const express = require('express');
 const router = express.Router();
@@ -61,8 +60,6 @@ router.post('/register', async (req,res)=>{
       console.log(ex);
     }
     let user = req.body;
-    const salt = await bcrypt.genSalt(10);
-    user.password = await bcrypt.hash(user.password , salt);
     User.addUser(user).then(result => {
       if (result instanceof Error)
         res.status(400).send(result.message);

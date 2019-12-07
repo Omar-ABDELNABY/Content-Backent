@@ -5,18 +5,18 @@ require('winston-daily-rotate-file');
 //https://github.com/winstonjs/winston-daily-rotate-file
 var errorTransport = new (transports.DailyRotateFile)({
     filename: 'logs/error-%DATE%.log',
-    datePattern: 'YYYY-MM-DD-HH',
+    datePattern: 'YYYY-MM-DD',
     level: 'error',
     zippedArchive: true,
     maxSize: '20m',
-    maxFiles: '14d'
+    maxFiles: '30d'
   });
   var commonTransport = new (transports.DailyRotateFile)({
     filename: 'logs/combined-%DATE%.log',
-    datePattern: 'YYYY-MM-DD-HH',
-    zippedArchive: true,
+    datePattern: 'YYYY-MM-DD',
+    zippedArchive: false,
     maxSize: '20m',
-    maxFiles: '14d'
+    maxFiles: '30d'
   });
 
 const logger = createLogger({

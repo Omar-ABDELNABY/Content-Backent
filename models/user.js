@@ -44,6 +44,8 @@ async function addUser(_user){
   try{
     const user = new User(_user);
     await user.validate();
+    const salt = await bcrypt.genSalt(10);
+    user.password = await bcrypt.hash(user.password , salt);
     let result = await user.save();
   return result;
   }

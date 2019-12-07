@@ -4,6 +4,7 @@ const error = require('./middleware/error')
 const logger = require ('./logger/logger');
 const config = require('config');
 const mongoose = require("mongoose");
+const seedDatabase = require('./Seed Database/seedDatabase');
 const express = require("express");
 const app = express();
 
@@ -12,10 +13,11 @@ const connectionString = config.get('connectionString');
 mongoose.connect(connectionString, {useNewUrlParser:true})
   .then(() => {
     logger.log('info', `Connected to database: ${connectionString}`);
+    seedDatabase();
   })
-  .catch((error) => {
+  .catch((err) => {
     logger.log('error', `Connection failed to: ${connectionString}`);
-    logger.log('error', error);
+    logger.log('error', err);
   });
 
 app.use(express.json());
@@ -28,7 +30,7 @@ app.use((req, res, next) => {
     );
     res.setHeader(
       "Access-Control-Allow-Methods",
-      "GET, POST, PATCH, DELETE, OPTIONS"
+      "GET, POST, PUT, DELETE, OPTIONS"
     );
     next();
   });
