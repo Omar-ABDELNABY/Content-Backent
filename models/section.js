@@ -16,6 +16,9 @@ const sectionSchema = mongoose.Schema({
       required: false, 
       // minlength: 1, 
       },
+      imagePath:{
+      type: String,
+    },
     order: {
       type: Number
     }
@@ -41,25 +44,28 @@ async function findOneSection(id){
   }
 }
 
-async function addSection(_section){
-  logger.log('info', `addSection: ${JSON.stringify(_section)}`);
+async function addSection(_section, imageUrl){
+  logger.log('info', `addSection attempt: ${JSON.stringify(_section)}`);
   try{
     const section = new Section(_section);
+    section.imagePath = imageUrl;
     await section.validate();
     let result = await section.save();
-  return result;
+    logger.log('info', `Section Added: ${JSON.stringify(_section)}`);
+    return result;
   }
   catch (ex){
     return ex;
   }
 }
 
-async function editSection(id, _section){
-  logger.log('info', `editSection id: ${id}, new section ${JSON.stringify(_section)}`);
+async function editSection(id, _section, imageUrl){
+  logger.log('info', `editSection attempt id: ${id}, new section ${JSON.stringify(_section)}`);
   // if ( !_section._id || _section._id != id)
   //   return (new Error('unmatched id'));
   try {
     let section = new Section(_section);
+    section.imagePath = imageUrl;
     await section.validate();
     section = section.toObject();                 // to delete the _id if needed
     delete section._id;
